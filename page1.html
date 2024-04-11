@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page1">
+    <button id="page2-btn">Go to Page 2</button> 
+    <h1>User Data</h1>
+    <p>This is a simple app that uses the Fetch API with async and await to retrieve data from a server and display a user's ID, name, username, email address, phone number, and website URL.</p>
+    <ul id="list"></ul>
+    <button id="loadUserButton">Load User Data</button>
+  </div>
+  <script src="1-user.js"></script>
+  <script>
+
+    const page1 = document.getElementById('page1');
+    
+    function fadeOut(elem) {
+      elem.style.opacity = 0;
+    }
+    
+    function loadPage(url) {
+      fadeOut(page1);
+      setTimeout(() => { 
+        window.location.href = url;  
+      }, 500);
+    }
+
+    const page2Btn = document.getElementById('page2-btn');
+    page2Btn.addEventListener('click', () => {
+      loadPage('page2.html');
+    });
+    
+    window.onload = () => {
+      page1.style.opacity = 1;
+    };
+
+  </script>
+</body>
+</html>

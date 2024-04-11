@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>3</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page3">
+    <button id="page4-btn">Go to Page 4</button>
+    <h1>User Data</h1>
+    <p>This is a simple app that uses the Fetch API with basic promise chaining and `promise.any()` to retrieve data from a server and display a user's ID, name, username, email address, phone number, and website URL.</p>
+    <ul id="list"></ul> 
+    </div>
+  <script src="3-user.js"></script>
+  <script>
+    const page3 = document.getElementById('page3');  
+
+    function fadeOut(elem) {
+      elem.style.opacity = 0;  
+    }
+
+    function loadPage(url) {
+      fadeOut(page3);
+      setTimeout(() => {  
+        window.location.href = url;
+      }, 500);
+    }
+
+    const page4btn = document.getElementById('page4-btn');
+    page4btn.addEventListener('click', () => {
+      loadPage('page4.html');
+    });
+  </script>
+</body>
+</html>
