@@ -3,8 +3,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 100vh;
   background-color: #99d192;
 }
@@ -21,6 +19,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h3,
+h4 {
+
+  color: #4caf50;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   background-color: #4caf50;
   color: white;
@@ -32,10 +41,10 @@ button {
   margin-bottom: 10px;
 }
 
-h1 {
-  color: #333;
-  font-size: 34px;
-}
+/* h4 {
+  color: #666;
+  font-size: 30px;
+} */
 
 p {
   color: #666;

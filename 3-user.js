@@ -1,7 +1,3 @@
-// Using promise chaining and promise.any() using the fetch() API to perform networking in JavaScript to fetch user data at the click of a button
-
-// code 3
-
 console.log("Hello, Good Afternoon!");
 
 const jsonStr = 'https://jsonplaceholder.typicode.com/users';

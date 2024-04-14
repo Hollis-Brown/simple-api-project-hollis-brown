@@ -1,14 +1,10 @@
-// Using promise chaining and promise.all() using the fetch() API to perform networking in JavaScript to fetch user data at the click of a button
-
-// code 2
-
 console.log("Hello, Good Afternoon!");
 
 const jsonStr = 'https://jsonplaceholder.typicode.com/users';
 
 let list = document.getElementById('list');
 let loadUserButton = document.createElement('button');
-loadUserButton.textContent = 'Load User Data';
+loadUserButton.textContent = 'Load Data';
 list.appendChild(loadUserButton);
 
 loadUserButton.addEventListener('click', () => {
